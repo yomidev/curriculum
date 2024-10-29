@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+header{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 20px;
+    height: 250px;
+    background-image: url('../img/pexels-8moments-1323550.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    color: #000;
+    font-size: 50px;
+}
+
+.datos{
+    background-color: #000;
+    padding: 10px;
+}
+
+.datos > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.datos img{
+    width: 20px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.datos a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.datos a:hover{
+    color: #ff5733;
+    transition: 0.3s ease-in;
+}
+
+#contenido{
+    display: flex;
+    padding: 50px;
+}
+
+.persona{
+    background-color: blanchedalmond;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.img-circular{
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.persona h2, .experiencia h2, .educacion h2, .habilidades h2{
+    font-size: 16px;
+    text-align: left;
+    border-bottom: #000 2px solid;
+}
+
+.persona p{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.iconos{
+    list-style: none;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.iconos img{
+   width: 20px;
+   display: inline-block;
+   margin-right: 15px;
+}
+
+.iconos a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.iconos a:hover{
+    color: #ff5733;
+    transition: 0.3s ease-in;
+}
+
+.cursos{
+    margin-top: 30px;
+}
+
+.cursos ul{
+    padding: 20px;
+    text-align: justify;
+}
+
+.experiencia, .educacion, .habilidades{
+    padding: 10px;
+}
+
+.experiencia ul{
+    padding: 20px;
+}
+
+.educacion p{
+    margin-top: 15px;
+}
+
+.habilidades ul{
+    padding: 20px;
+    list-style: none;
+}
+
+.circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5733;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width:480px){
+    .datos > ul{
+        flex-direction: column;
+    }
+    #contenido{
+        flex-direction: column;
+    }
+}
